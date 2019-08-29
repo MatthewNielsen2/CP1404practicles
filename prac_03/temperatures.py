@@ -4,7 +4,6 @@ MENU = """C - Convert Celsius to Fahrenheit
 
 
 def main():
-    """Temperature conversion program."""
     print(MENU)
     choice = input(">>> ").upper()
     while choice != "Q":
