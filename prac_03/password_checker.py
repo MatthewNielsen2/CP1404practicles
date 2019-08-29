@@ -3,6 +3,17 @@ def main():
     print_asterisks(password)
 
 
+MINIMUM_LENGTH = 5
+
+
+def version_1():
+    password = input("Enter password of at least {} characters: ".format(MINIMUM_LENGTH))
+    while len(password) < MINIMUM_LENGTH:
+        password = input("Enter password of at least {} characters: ".format(MINIMUM_LENGTH))
+
+    print('*' * len(password))
+
+
 def get_password(minimum_length):
     password = input("Enter password of at least {} characters: ".format(minimum_length))
     while len(password) < minimum_length:
