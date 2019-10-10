@@ -7,9 +7,8 @@ COLOUR_CODES = {"RED": "ff0000", "ORANGE": "ffa500",
 
 colour = input("Enter Colour: ").upper()
 while colour != "":
-    while colour != "":
-        if colour in COLOUR_CODES:
-            print(colour, "is", COLOUR_CODES[colour])
-        else:
-            print("Invalid Colour")
-        colour = input("Enter Colour: ")
+    if colour in COLOUR_CODES:
+        print(colour, "is", COLOUR_CODES[colour])
+    else:
+        print("Invalid Colour")
+    colour = input("Enter Colour: ")
